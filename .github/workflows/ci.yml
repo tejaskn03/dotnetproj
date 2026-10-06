@@ -16,4 +16,6 @@ jobs:
             cd NetflixProject
             dotnet restore
       - name: Build
-        run: dotnet build
+        run: |
+            cd NetflixProject
+            dotnet build --configuration Release
